@@ -13,8 +13,8 @@ new_data=[]
 for i in word_tokenize:
     if i not in stop_words:
         new_data.append(i)
-port_stem=PorterStemmer(new_data)
-snow_stem=SnowballStemmer(new_data)
+port_stem=ps.stem(new_data)
+snow_stem=snw.stem(new_data)
 
 
     
